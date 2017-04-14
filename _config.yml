@@ -1,6 +1,6 @@
 # Build settings
 # Gems
-gems: 
+gems:
 - jekyll-paginate
 - jekyll-feed
 
@@ -11,10 +11,10 @@ gems:
 #baseurl: "/projectname"
 url: ""
 enforce_ssl: ""
-baseurl: "/jekyllBasicBlog"
+baseurl: "/"
 
 # Title of website
-title: Babji Chetty
+title: Toolbox
 
 #Default keywords (used if no keywords are specified on a page basis)
 keywords: test1, test2, etc
@@ -34,16 +34,16 @@ nav-links:
   Travel: "travel"
   About Me: "aboutme"
   Archive: "archive"
-  Contact: "contact"  
-  
+  Contact: "contact"
+
 # --- Footer options --- #
 
-# If the values are empty, they are ignored 
+# If the values are empty, they are ignored
 profile:
   name: Babji Chetty
   email: Your-Email
   facebook: your-fb-id
-  github: your-github-id 
+  github: your-github-id
   twitter: your-twitter-id
   linkedin: your-linkedin-id
   stackoverflow: your-stackoverflow-id
@@ -92,5 +92,5 @@ exclude:
   - README.md
   - CNAME
 
-created-by: Babji, Chetty
-creator-url: https://bchetty.com
+created-by: John McCawley
+creator-url: http://thedigitalgarage.io
