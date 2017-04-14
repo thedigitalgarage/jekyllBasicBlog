@@ -40,8 +40,8 @@ nav-links:
 
 # If the values are empty, they are ignored
 profile:
-  name: Babji Chetty
-  email: Your-Email
+  name: John McCawley
+  email: john.mccawley@thedigitalgarage.io
   facebook: your-fb-id
   github: your-github-id
   twitter: your-twitter-id
@@ -49,7 +49,7 @@ profile:
   stackoverflow: your-stackoverflow-id
 
 # To display link in the footer section
-pretty-url: "bchetty.com"
+pretty-url: "thedigitalgarage.io"
 
 # --- Misc --- #
 
@@ -60,7 +60,7 @@ disqus: "Your-Disqus-Id"
 google_analytics: "Your-GA-Id"
 
 # Set these options as you need (For more information, check Jekyll's site)
-timezone: "Europe/Berlin"
+timezone: "Mountain"
 markdown: kramdown
 #highlighter: rouge
 kramdown:
