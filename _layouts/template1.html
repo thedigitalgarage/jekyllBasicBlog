@@ -9,21 +9,9 @@
       <p class="toggle-nav visible-xs pull-left">
         <button class="btn btn-default btn-sm" type="button" data-toggle="offcanvas">Toggle nav</button>
       </p>
-      <ol class="breadcrumb">
-        <li class="sitename">
-          <a href="../../welcome/index.html">{{ site.title }}</a>
-        </li>
-        <li class="hidden-xs active">
-          <%= breadcrumb_root %>
-        </li>
-        <li class="hidden-xs active">
-          <%= breadcrumb_group %>
-        </li>
-        <%= breadcrumb_subgroup_block %>
-        <li class="hidden-xs active">
-          <%= breadcrumb_topic %>
-        </li>
-      </ol>
+      <div class="breadcrumb">
+        {% include breadcrumb.html %}
+      </div>
       <div class="row row-offcanvas row-offcanvas-left">
         <div class="col-xs-8 col-sm-3 col-md-3 sidebar sidebar-offcanvas">
           <div class="row-fluid">
