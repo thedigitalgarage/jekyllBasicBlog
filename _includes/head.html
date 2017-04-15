@@ -21,43 +21,13 @@
     <!-- Bootstrap core CSS -->
     <link href="{{ site.baseurl }}/assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="{{ site.baseurl }}/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="{{ site.baseurl }}/assets/css/breadcrumb-style.css" rel="stylesheet">
     <link href="http://assets-digitalgarage-infra.apps.thedigitalgarage.io/stylesheets/subdomain.css" rel="stylesheet" type="text/css">
     <link href="http://assets-digitalgarage-infra.apps.thedigitalgarage.io/stylesheets/docs.css" rel="stylesheet" type="text/css"/>
     <link href="http://assets-digitalgarage-infra.apps.thedigitalgarage.io/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
+
     <!-- Styles for 'Syntax Highlighting' of code -->
     <link href="{{ site.baseurl }}/assets/css/syntax.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="{{ site.baseurl }}/assets//js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Facebook OpenGraph tags -->
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta property="og:type" content="website" />
-
-    {% if page.id %}
-        <meta property="og:url" content="{{ site.url }}{{ page.url }}/" />
-    {% else %}
-        <meta property="og:url" content="{{ site.url }}{{ page.url | remove: '/index.html' | remove: '.html' }}" />
-    {% endif %}
-
-    {% if page.fb-img %}
-        <meta property="og:image" content="{{ page.fb-img }}" />
-    {% elsif site.avatar %}
-        <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
-    {% else %}
-        <meta property="og:image" content="" />
-    {% endif %}
 </head>
