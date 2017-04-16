@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 {% include head.html %}
-
 <body>
     {% include navbar.html %}
-
     <div class="container">
-        ::before
         {% include header-breadcrumb.html %}
-
         <div>
             {{ content }}
         </div>
-        ::after
     </div>
-
     {% include footer.html %}
     {% include scripts.html %}
-
 </body>
 
 </html>
