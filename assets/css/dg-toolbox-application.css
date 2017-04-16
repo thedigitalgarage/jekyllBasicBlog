@@ -17,6 +17,11 @@
     margin-top: 23px;
 }
 
+.breadcrumb .sitename a,
+.breadcrumbs .sitename a {
+    font-size: 20px
+}
+
 .form-group-lg #cse-search-form {
   padding: 15px 30px;
   position: relative;

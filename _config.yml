@@ -1,8 +1,6 @@
 # Build settings
 # Gems
 gems:
-- jekyll-paginate
-- jekyll-feed
 
 # url is the full website URL
 # baseurl is the website's URL without the hostname
@@ -49,7 +47,7 @@ profile:
   stackoverflow: your-stackoverflow-id
 
 # To display link in the footer section
-pretty-url: "thedigitalgarage.io"
+pretty-url: "www.thedigitalgarage.io"
 
 # --- Misc --- #
 
@@ -66,7 +64,7 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-permalink: /blog/:title.html
+permalink: /:categories/:year/:month/:day/:title.html
 paginate: 5
 
 # Default YAML values (more information on Jekyll's site)
@@ -93,4 +91,4 @@ exclude:
   - CNAME
 
 created-by: John McCawley
-creator-url: http://thedigitalgarage.io
+creator-url: http://www.thedigitalgarage.io
