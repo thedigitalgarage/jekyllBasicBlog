@@ -1,12 +1,12 @@
---- 
-layout: default 
+---
+layout: default
 ---
 
 <div class="posts-list">
     {% for post in paginator.posts %}
     <article class="postPreviewBox">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-            <h2 class="postTitle">{{ post.title }}</h2> 
+        <a href="{{ post.url | prepend: site.baseurl }}.html">
+            <h2 class="postTitle">{{ post.title }}</h2>
             {% if post.subtitle %}
                 <h3 class="postSubTitle">
                     {{ post.subtitle }}
@@ -34,7 +34,7 @@ layout: default
             <li class="previous">
                 <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
             </li>
-        {% endif %} 
+        {% endif %}
         {% if paginator.next_page %}
             <li class="next">
                 <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
