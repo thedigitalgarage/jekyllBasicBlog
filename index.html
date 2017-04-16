@@ -5,12 +5,12 @@ layout: default
 <div class="posts-list">
     {% for post in paginator.posts %}
     <article class="postPreviewBox">
-        <a href="{{ post.url | prepend: site.baseurl }}.html">
+        <a href="{{ post.url | prepend: site.baseurl }}">
             <h2 class="postTitle">{{ post.title }}</h2>
             {% if post.subtitle %}
                 <h3 class="postSubTitle">
                     {{ post.subtitle }}
-                </h3> 
+                </h3>
             {% endif %}
         </a>
 
