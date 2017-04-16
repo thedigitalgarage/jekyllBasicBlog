@@ -1,5 +1,5 @@
 ---
-layout: template1
+layout: default
 title: My Travel Stuff
 comments: true
 ---
