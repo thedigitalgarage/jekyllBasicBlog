@@ -6,12 +6,14 @@
 <body>
     {% include navbar.html %}
 
-    {% include header-breadcrumb.html %}
-
     <div class="container">
+        ::before
+        {% include header-breadcrumb.html %}
+
         <div>
             {{ content }}
         </div>
+        ::after
     </div>
 
     {% include footer.html %}
