@@ -99,5 +99,8 @@ exclude:
   - README.md
   - CNAME
 
+tag_page_layout: tag_page
+tag_page_dir: tag
+
 created-by: John McCawley
 creator-url: http://www.thedigitalgarage.io

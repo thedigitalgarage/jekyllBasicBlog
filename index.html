@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="posts-list">
+<div class="posts-list" style="padding: 8px 15px">
     {% for post in paginator.posts %}
     <article class="postPreviewBox">
         <a href="{{ post.url | prepend: site.baseurl }}">
