@@ -60,6 +60,7 @@ google_analytics: "Your-GA-Id"
 # Set these options as you need (For more information, check Jekyll's site)
 timezone: "Mountain"
 markdown: kramdown
+permalink: /:categories/:title.html
 #highlighter: rouge
 kramdown:
   input: GFM
