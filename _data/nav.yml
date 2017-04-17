@@ -1,12 +1,12 @@
-- title: "Home"
+- title: "Toolbox"
   href: "/"
 
-- title: "News"
-  href: "/news/"
+- title: "Quickstarts"
+  href: "/quickstarts/"
 
-- title: "Snippets"
+- title: "Builders"
   subcategories:
-    - subtitle: "Example1"
+    - subtitle: "Java"
       subhref: "#"
-    - subtitle: "Example2"
+    - subtitle: "JavaScrip"
       subhref: "#"
