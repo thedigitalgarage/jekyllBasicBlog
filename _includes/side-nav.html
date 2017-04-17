@@ -8,10 +8,10 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" name="{{ category | first }}" href="#{{ category | first }}">{{ category | first }}</a>
+                        <a data-toggle="collapse" data-parent="#accordion" name="{{ category | first }}" href="#{{ category | first }}">{{ category | first }},{{ page.catagories }}</a>
                     </h4>
                 </div>
-                {% if page.categories == category | first %}
+                {% if forloop.index == 1 %}
                 <div id="{{ category | first }}" class="panel-collapse collapse in">
                     <div class="panel-body">
                         <ul>
