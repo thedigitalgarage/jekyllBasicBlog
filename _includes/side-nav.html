@@ -5,15 +5,13 @@
     <div class="panel-body">
         <div class="panel-group" id="accordion">
             {% for category in site.categories %}
-            {% capture cat %}{{ category | first }}{% endcapture %}
-            {{ cat }},{{ page.categories }}
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" name="{{ category | first }}" href="#{{ category | first }}">{{ category | first }}</a>
                     </h4>
                 </div>
-                {% if cat contains page.categories %}
+                {% if category | first contains page.categories %}
                 <div id="{{ category | first }}" class="panel-collapse collapse in">
                     <div class="panel-body">
                         <ul>
