@@ -1,6 +1,6 @@
 <div class="panel panel-default">
     <div class="panel-heading">
-        <span class="text-primary"><b>Blog Categories</b></span>
+        <span class="text-primary"><b>Services Categories</b></span>
     </div>
     <div class="panel-body">
         <div class="panel-group" id="accordion">
@@ -8,17 +8,23 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" name="{{ category | first }}" href="#{{ category | first }}">{{ category | first }}</a>
-                        </h4>
+                        <a data-toggle="collapse" data-parent="#accordion" name="{{ category | first }}" href="#{{ category | first }}">{{ category | first }}</a>
+                    </h4>
                 </div>
-
+                {{ category }}
                 {% if forloop.index == 1 %}
                 <div id="{{ category | first }}" class="panel-collapse collapse in">
                     <div class="panel-body">
                         <ul>
-                            {% for posts in category %} {% for post in posts %} {% if post.url %}
-                            <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-                            {% endif %} {% endfor %} {% endfor %}
+                            {% for posts in category %}
+                              {% for post in posts %}
+                                {% if post.url %}
+                                  <li>
+                                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                                  </li>
+                                {% endif %}
+                              {% endfor %}
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -26,14 +32,19 @@
                 <div id="{{ category | first }}" class="panel-collapse collapse">
                     <div class="panel-body">
                         <ul>
-                            {% for posts in category %} {% for post in posts %} {% if post.url %}
-                            <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-                            {% endif %} {% endfor %} {% endfor %}
+                            {% for posts in category %}
+                              {% for post in posts %}
+                                {% if post.url %}
+                                  <li>
+                                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                                  </li>
+                                {% endif %}
+                              {% endfor %}
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
                 {% endif %}
-
             </div>
             {% endfor %}
         </div>

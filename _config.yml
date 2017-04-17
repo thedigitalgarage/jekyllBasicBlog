@@ -64,7 +64,6 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-permalink: pretty
 paginate: 5
 
 # Default YAML values (more information on Jekyll's site)
