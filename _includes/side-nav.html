@@ -11,8 +11,7 @@
                         <a data-toggle="collapse" data-parent="#accordion" name="{{ category | first }}" href="#{{ category | first }}">{{ category | first }}</a>
                     </h4>
                 </div>
-                {% if page.categories == 'travel' %}
-                {{ page.categories }}
+                {% if page.categories == category | first %}
                 <div id="{{ category | first }}" class="panel-collapse collapse in">
                     <div class="panel-body">
                         <ul>
